@@ -1,0 +1,152 @@
+.header{
+  height: 60px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  position: fixed;
+  top:0;
+  left:0;
+  right:0;
+  z-index: 100;
+  background-color: white;
+  border-bottom-width:1px ;
+  border-bottom-style: solid;
+  border-bottom-color:rgb(220, 219, 219);
+}
+
+.left-section{
+
+ 
+  display: flex;
+  align-items: center;
+}
+
+.hamburger-logo{
+  height: 24px;
+  margin-left: 24px;
+  margin-right: 24px;
+}
+.yt-logo{
+  height: 20px;
+}
+.middle-section{
+  flex:1;
+  margin-left:100px;
+  margin-right: 36px;
+  max-width: 500px;
+  display:flex;
+  align-items: center;
+}
+.searchbar{
+  flex:1;
+  height: 36px;
+  padding-left: 10px;
+  font-size: 16px;
+  border-width: 1px;
+  border-style: solid;
+  border-color: gray;
+  width: 0;
+  box-shadow:inset 1px 2px 5px rgba(221, 221, 221, 0.5);
+
+
+}
+.searchbar::placeholder{
+  font-family: Roboto, arial;
+  font-size:16px;
+}
+.search-button{
+  height:40px;
+  width:66px;
+  background-color:rgb (240,240,240);
+  border-width: 1px;
+  border-style: solid;
+  border-color:grey ;
+  margin-left: -1px;
+  margin-right: 10px;
+ 
+
+}
+.search-button,
+ .voice_iccon{
+   position: relative;
+}
+.voice-button{
+  height:40px;
+  width: 40px;
+  border-radius:20px ;
+  border:none;
+  background-color: rgb(215, 212, 212);
+
+}
+.search-icon{
+  height:25px;
+  margin-top: 4px;
+}
+.voice_iccon{
+  height: 24px;
+  margin-top: 4px;
+ 
+}
+.right-section{
+  width:180px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-right: 20px;
+  flex-shrink: 0;
+
+}
+.upload{
+  height: 24px;
+}
+.yt-app{
+  height: 24px;
+}
+.noti{
+  height: 24px;
+}
+.noti-con{
+  position: relative;
+
+}
+.count{
+  position: absolute;
+  top:-2px;
+  right: -5px;
+  background: rgb(148, 1, 1);
+  color:white;
+  font-family: Roboto,arial;
+  font-size: 11px;
+  padding-left: 5px;
+  padding-right: 5px;
+  padding-top: 2px;
+  padding-bottom: 2px;
+  border-radius: 10px;
+
+}
+.dp{
+  height: 32px;
+  border-radius: 16px;
+}
+.search-button .tip,
+.voice-button .tip{
+  position: absolute;
+  background-color: grey;
+  color: white;
+  padding-top: 4px;
+  padding-bottom: 4px;
+  padding-left: 8px;
+  padding-right: 8px;
+  border-radius: 2px;
+  font-size: 12px;
+  bottom: -30px;
+  opacity: 0;
+  transition: opacity 0.15s;
+  pointer-events: none;
+
+
+}
+.search-button:hover .tip,
+.voice-button:hover .tip{
+  opacity: 1;
+}
